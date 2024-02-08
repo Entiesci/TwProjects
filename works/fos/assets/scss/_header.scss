@@ -1,0 +1,89 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: $primary;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: $white;
+  padding: 0;
+
+  .contact-info {
+
+    i {
+      font-style: normal;
+      color: $white;
+
+      a, span {
+        padding-left: 5px;
+        color: #fff;
+      }
+
+      a {
+        line-height: 0;
+        transition: 0.3s;
+        transition: 0.3s;
+        &:hover {
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+
+    }
+  }
+
+  .social-links {
+    a {
+      color: rgba(#fff, .7);
+      line-height: 0;
+      transition: 0.3s;
+      margin-left: 20px;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: $white;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 86px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+
+
+  &.fixed-top {
+    height: 70px;
+  }
+
+  .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-family: $font-secondary;
+
+    a {
+      color: $secondary;
+      span {
+        color: $primary;
+      }
+    }
+
+    img {
+      max-height: 40px;
+    }
+
+  }
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
